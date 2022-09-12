@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="PwordGen.css">
+    </head>
+    <body>
+        <div id="body">
+            <h1>Generate A Secure Password</h1>
+            <div id="chars">
+                <div id="divh3"><h3 id="h3a"><body onload="document.getElementById('h3a').innerHTML = getCharacters(range.value)"></body></h3></div>
+                <div class="copRef"><span id="span-copy"><i class="copy outline icon big"><span id="spancopy">Copy</span></i></span> <span id="span-generate"><i class="sync icon big"><span id="spangen">Generate</span></i></span></div>
+            </div>
+            <meter min="6" low="11" max="30" high="30" optimum="15" value="12"></meter>
+            <div id="body-small">
+                <h2 id="h3b">Customize your password</h2><hr>
+                <div id="plength">
+                    <p>Password Length</p>
+                    <input id="number" type="number" name="number" min="6" step="1" max="30" value="12">
+                    <input id="range" type="range" min="6" max="30" step="1" value="12">
+                </div>
+                <div id="ul-div">
+                    <ul>
+                        <li>
+                            <input class="bigCheckbox" type="radio" id="say" name="rad">
+                            <label for="say">Easy to say <span id="info1"><i class="info circle icon"><span id="spaninfo1">Avoid numbers and special characters</span></i></span></label>
+                        </li>
+                        <li>
+                            <input class="bigCheckbox" type="radio" id="read" name="rad">
+                            <label for="read">Easy to read <span id="info2"><i class="info circle icon"><span id="spaninfo2">Avoid ambiguous characters like l, 1, O, and 0</span></i></span></label>
+                        </li>
+                        <li>
+                            <input class="bigCheckbox" type="radio" id="all" name="rad" checked>
+                            <label for="all">All Characters <span id="info3"><i class="info circle icon"><span id="spaninfo3">Any character combinations like !, 7, h, K, and l1</span></i></span></label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <input class="bigCheckbox" type="checkbox" id="lower" name="lower" checked>
+                            <label for="lower">Lowercase</label>
+                        </li>
+                        <li>
+                            <input class="bigCheckbox" type="checkbox" id="upper" name="upper" checked>
+                            <label for="upper">Uppercase</label>
+                        </li>
+                        <li>
+                            <input class="bigCheckbox" type="checkbox" id="numbers" name="numbers" checked>
+                            <label for="numbers">Numbers</label>
+                        </li>
+                        <li>
+                            <input class="bigCheckbox" type="checkbox" id="symbols" name="symbols" checked>
+                            <label for="symbols">Symbols</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button>Copy Password</button><span id="btncopied">Copied!</span>
+        </div>
+        <script src="PwordGen.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+body{
+    background-color: aquamarine;
+}
+
+#body {
+    width: 800px;
+    margin: 50px auto;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+#chars {
+    background-color: #fff;
+    height: 105px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-right: 40px;
+}
+
+meter{
+    width: 800px;
+    height: 25px;
+    margin-top: -10px;
+}
+
+.big, .info{
+    cursor: pointer;
+}
+
+#divh3{
+    margin-top: 28px;
+    margin-left: 40px;
+}
+
+#h3a{
+    font-size: 30px;
+}
+
+.copRef{
+    width: 90px;
+    word-spacing: 5px;
+    float: right;
+    margin-top: -32px;
+}
+
+#body-small{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+#h3b{
+    font-size: 35px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+hr{
+    margin: 0 40px 0 40px;
+    height: 1px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#plength{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+input[type="number"]{
+    width: 65px;
+    height: 42px;
+    text-align: center;
+    border: 2px solid #f0e8e8;
+    border-radius: 5px;
+}
+
+input[type="range"]{
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    margin-left: 50px;   
+}
+
+input.bigCheckbox {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#ul-div{
+    margin: -115px 20px 30px 230px;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+button{
+    width: 230px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid red;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 285px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: rgb(215, 17, 17);
+    cursor: pointer;
+}
+
+#spancopy, #spangen{
+    display: none;
+    border: 2px solid #f0e8e8;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+#spaninfo1, #spaninfo2, #spaninfo3{
+    display: none;
+    width: 220px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: -60px;
+    margin-left: 20px;
+    border: 2px solid #f0e8e8;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height: 20px;
+    padding: 5px 5px;
+    text-align: start;
+    position: fixed;
+}
+
+#btncopied{
+    display: none;
+    font-size: 17px;
+    font-weight: 600;
+    border: 2px solid #f0e8e8;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 5px;
+    margin-top: -70px;
+    margin-left: 10px;
+    position: fixed;
+}
